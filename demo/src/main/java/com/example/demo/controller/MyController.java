@@ -7,11 +7,11 @@ import lombok.extern.log4j.Log4j2;
 
 @Controller
 @Log4j2
+@RequestMapping("/my")
 public class MyController {
 	
-	@RequestMapping("/")
-	public String root() {
+	@RequestMapping("/main")
+	public void root() {
 		log.info("root........");
-		return "index";
 	}
 }
